@@ -56,6 +56,8 @@
 
     //////////////////////////////////////////////////////////////////////
     *7- Copiar y pegar la siguiente linea en el archivo "./webpack.dev.js"
+
+    const HtmlWebPackPlugin = require('html-webpack-plugin');
     
     plugins: [
         new HtmlWebPackPlugin({
@@ -64,7 +66,7 @@
         }),
     ]
     //////////////////////////////////////////////////////////////////////
-    
+
     //////////////////////////////////////////////////////////////////////
     *3- npm i -D webpack-dev-server //-> Ejecutar comando
       https://webpack.js.org/configuration/dev-server/
