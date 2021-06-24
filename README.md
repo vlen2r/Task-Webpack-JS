@@ -183,13 +183,28 @@
     //////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////////////////////
-    *8- npm install css-minimizer-webpack-plugin --save-dev //-> Ejecutar comando
+    *21- npm install css-minimizer-webpack-plugin --save-dev //-> Ejecutar comando
       https://webpack.js.org/plugins/css-minimizer-webpack-plugin/#root
     //////////////////////////////////////////////////////////////////////
     
     //////////////////////////////////////////////////////////////////////
-    *9- npm install terser-webpack-plugin --save-dev //-> Ejecutar comando
+    *22- npm install terser-webpack-plugin --save-dev //-> Ejecutar comando
       https://webpack.js.org/plugins/terser-webpack-plugin/#root
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    *23- Agregar la siguiente linea en "./webpack.prod.js"
+
+    const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+    const TerserPlugin = require("terser-webpack-plugin");
+
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin(),
+            new TerserPlugin(),
+        ]
+    },
     //////////////////////////////////////////////////////////////////////
     
     //////////////////////////////////////////////////////////////////////
