@@ -6,10 +6,10 @@
   *npm 7.10.0
 
 # Instalacion
-  * npm i
-  * npm start // Nos permite levantar un servidor
-  * npm run build:prod // Nos permite construir el proyecto para produccion
-  * npm run build:dev // Nos permite construir el proyecto para desarrollo
+  * `npm i`
+  * `npm start` // Nos permite levantar un servidor
+  * `npm run build:prod` // Nos permite construir el proyecto para produccion
+  * `npm run build:dev` // Nos permite construir el proyecto para desarrollo
 
 # ¿Como se fue creando el proyecto?
  Paso por paso.
