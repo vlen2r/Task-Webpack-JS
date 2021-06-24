@@ -8,7 +8,7 @@ module.exports = {
     mode: 'development',
     output: {
         clean: true,
-        filename: '[name].[contenthash].js',
+        filename: '[name].js',
     },
     module: {
         rules: [{
@@ -44,7 +44,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
+            filename: '[name].css',
             ignoreOrder: false,
         }),
         new CopyPlugin({

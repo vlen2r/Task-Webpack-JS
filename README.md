@@ -11,7 +11,7 @@
   * `npm run build:prod` // Nos permite construir el proyecto para produccion
   * `npm run build:dev` // Nos permite construir el proyecto para desarrollo
 
-# ¿Como se fue creando el proyecto?
+# ¿Como se fue creando el cascaron del proyecto?
 Paso por paso:
 
     //////////////////////////////////////////////////////////////////////
@@ -252,5 +252,4 @@ Paso por paso:
     {
         "presets": ["@babel/preset-env"]
     }
-    //////////////////////////////////////////////////////////////////////
-    
+    //////////////////////////////////////////////////////////////////////  
