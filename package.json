@@ -19,7 +19,9 @@
     },
     "homepage": "https://github.com/vlen2r/Task-Webpack-JS#readme",
     "devDependencies": {
+        "copy-webpack-plugin": "^9.0.0",
         "css-loader": "^5.2.6",
+        "file-loader": "^6.2.0",
         "html-loader": "^2.1.2",
         "html-webpack-plugin": "^5.3.2",
         "mini-css-extract-plugin": "^1.6.0",

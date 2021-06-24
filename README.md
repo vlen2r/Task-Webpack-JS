@@ -109,6 +109,7 @@
       https://webpack.js.org/plugins/mini-css-extract-plugin/
     //////////////////////////////////////////////////////////////////////
 
+    //////////////////////////////////////////////////////////////////////
     *14- Agregar las siguientes lineas en "./webpack.dev.js"
     
     const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -126,12 +127,43 @@
             ignoreOrder: false,
         }),
     ]
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    *15- npm install file-loader --save-dev //-> Ejecutar comando
+      https://v4.webpack.js.org/loaders/file-loader/
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    *16- Agregar la siguiente linea de codigo en "./webpack.dev.js"
+
+    rules: [ //-> Añadir esta nueva regla
+        {
+            test: /\.(png|jpe?g|gif)$/,
+            loader: 'file-loader',
+        },
+    ]
+    //////////////////////////////////////////////////////////////////////
     
     //////////////////////////////////////////////////////////////////////
-    *7- npm install copy-webpack-plugin --save-dev //-> Ejecutar comando
+    *17- npm install copy-webpack-plugin --save-dev //-> Ejecutar comando
       https://webpack.js.org/plugins/copy-webpack-plugin/
     //////////////////////////////////////////////////////////////////////
     
+    //////////////////////////////////////////////////////////////////////
+    *18- Copiar y pegar el siguiente codigo en "./webpack.dev.js"
+    
+    const CopyPlugin = require("copy-webpack-plugin");
+
+    plugins:[ //-> Añadir el siguiente plugin        
+        new CopyPlugin({
+            patterns: [
+                { from: "./src/assets/", to: "./assets/" },
+            ],
+        }),
+    ]    
+    //////////////////////////////////////////////////////////////////////
+
     //////////////////////////////////////////////////////////////////////
     *8- npm install css-minimizer-webpack-plugin --save-dev //-> Ejecutar comando
       https://webpack.js.org/plugins/css-minimizer-webpack-plugin/#root
