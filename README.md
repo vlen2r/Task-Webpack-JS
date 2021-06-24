@@ -79,17 +79,31 @@
         "start": "webpack serve --config webpack.dev.js --open --port=8080" //-> Linea agregada
     },    
     //////////////////////////////////////////////////////////////////////
-    
+
     //////////////////////////////////////////////////////////////////////
-    *4- npm install --save-dev style-loader //-> Ejecutar comando
+    *10- npm install --save-dev style-loader //-> Ejecutar comando
       https://webpack.js.org/loaders/style-loader/
     //////////////////////////////////////////////////////////////////////
     
     //////////////////////////////////////////////////////////////////////
-    *5- npm install --save-dev css-loader //-> Ejecutar comando
+    *11- npm install --save-dev css-loader //-> Ejecutar comando
       https://webpack.js.org/loaders/css-loader/
     //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////    
+    *12- Agregar la siguiente regla en rules de "./webpack.dev.js"
     
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                exclude: /styles.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
+    //////////////////////////////////////////////////////////////////////
+
     //////////////////////////////////////////////////////////////////////
     *6- npm install --save-dev mini-css-extract-plugin //-> Ejecutar comando
       https://webpack.js.org/plugins/mini-css-extract-plugin/

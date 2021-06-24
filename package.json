@@ -19,8 +19,10 @@
     },
     "homepage": "https://github.com/vlen2r/Task-Webpack-JS#readme",
     "devDependencies": {
+        "css-loader": "^5.2.6",
         "html-loader": "^2.1.2",
         "html-webpack-plugin": "^5.3.2",
+        "style-loader": "^2.0.0",
         "webpack": "^5.40.0",
         "webpack-cli": "^4.7.2",
         "webpack-dev-server": "^3.11.2"

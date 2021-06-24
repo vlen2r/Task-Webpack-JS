@@ -8,14 +8,20 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.html$/,
-            use: [{
-                loader: 'html-loader',
-                options: {
-                    sources: false,
-                }
-            }],
-        }, ],
+                test: /\.html$/,
+                use: [{
+                    loader: 'html-loader',
+                    options: {
+                        sources: false,
+                    }
+                }],
+            },
+            {
+                test: /\.css$/,
+                exclude: /styles.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
     },
     optimization: {
 
