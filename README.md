@@ -1,6 +1,16 @@
 # Task-Webpack-JS
  Proyecto realizado en base al curso de Udemy "Javascript Moderno" - Seccion 8 y Seccion 10
 
+# Requerimientos
+  *node v16.0.0
+  *npm 7.10.0
+
+# Instalacion
+  * npm i
+  * npm start // Nos permite levantar un servidor
+  * npm run build:prod // Nos permite construir el proyecto para produccion
+  * npm run build:dev // Nos permite construir el proyecto para desarrollo
+
 # ¿Como se fue creando el proyecto?
  Paso por paso.
 
