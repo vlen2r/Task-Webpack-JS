@@ -58,7 +58,7 @@
     *7- Copiar y pegar la siguiente linea en el archivo "./webpack.dev.js"
 
     const HtmlWebPackPlugin = require('html-webpack-plugin');
-    
+
     plugins: [
         new HtmlWebPackPlugin({
             template: './src/index.html',
@@ -68,8 +68,16 @@
     //////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////////////////////
-    *3- npm i -D webpack-dev-server //-> Ejecutar comando
+    *8- npm i -D webpack-dev-server //-> Ejecutar comando
       https://webpack.js.org/configuration/dev-server/
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    *9- Agregar la siguiente linea al "./package.json"
+    
+    "scripts": {
+        "start": "webpack serve --config webpack.dev.js --open --port=8080" //-> Linea agregada
+    },    
     //////////////////////////////////////////////////////////////////////
     
     //////////////////////////////////////////////////////////////////////
