@@ -2,7 +2,7 @@
  Proyecto realizado en base al curso de Udemy "Javascript Moderno" - Seccion 8 y Seccion 10
 
 # Requerimientos
-  *node v16.0.0
+  *node v16.0.0  
   *npm 7.10.0
 
 # Instalacion
