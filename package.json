@@ -20,6 +20,9 @@
     },
     "homepage": "https://github.com/vlen2r/Task-Webpack-JS#readme",
     "devDependencies": {
+        "@babel/core": "^7.14.6",
+        "@babel/preset-env": "^7.14.7",
+        "babel-loader": "^8.2.2",
         "copy-webpack-plugin": "^9.0.0",
         "css-loader": "^5.2.6",
         "css-minimizer-webpack-plugin": "^3.0.1",
