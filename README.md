@@ -4,9 +4,14 @@
 # ¿Como se fue creando el proyecto?
  Paso por paso.
 
-    *1- npm install --save-dev html-loader //-> Ejecutar comando
+    //////////////////////////////////////////////////////////////////////
+    *1- npm init //-> Ejecutar comando
+    //////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
+    *2- npm install --save-dev html-loader //-> Ejecutar comando
       https://webpack.js.org/loaders/html-loader/
-
+    //////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////
     *2- npm install --save-dev html-webpack-plugin //-> Ejecutar comando
       https://webpack.js.org/plugins/html-webpack-plugin/
 
@@ -33,4 +38,6 @@
     
     *10- Seguir los pasos de la siguiente pagina (elegir opcion webpack)
       https://babeljs.io/setup
+    
+    *11-
 

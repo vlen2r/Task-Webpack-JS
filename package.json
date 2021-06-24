@@ -1,0 +1,19 @@
+{
+  "name": "task-webpack-js",
+  "version": "1.0.0",
+  "description": "Proyecto Task-Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlen2r/Task-Webpack-JS.git"
+  },
+  "author": "Valentin Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlen2r/Task-Webpack-JS/issues"
+  },
+  "homepage": "https://github.com/vlen2r/Task-Webpack-JS#readme"
+}
