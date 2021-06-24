@@ -25,7 +25,7 @@
         mode: 'development',
         output: {
             clean: true,
-            filename: '[name].[fullhash].js',
+            filename: '[name].[contenthash].js',
         },
         module: {
             rules: [{
@@ -123,7 +123,7 @@
     },
     plugins: [ //-> Añadir este nuevo plugin
         new MiniCssExtractPlugin({
-            filename: '[name].[fullhash].css',
+            filename: '[name].[contenthash].css',
             ignoreOrder: false,
         }),
     ]
@@ -149,7 +149,7 @@
     *17- npm install copy-webpack-plugin --save-dev //-> Ejecutar comando
       https://webpack.js.org/plugins/copy-webpack-plugin/
     //////////////////////////////////////////////////////////////////////
-    
+
     //////////////////////////////////////////////////////////////////////
     *18- Copiar y pegar el siguiente codigo en "./webpack.dev.js"
     
@@ -162,6 +162,24 @@
             ],
         }),
     ]    
+    //////////////////////////////////////////////////////////////////////
+
+    //////////////////////////////////////////////////////////////////////
+    *19- Clonar el "./webpack.dev.js" y cambiarle el nombre a "./webpack.prod.js".
+
+    Ademas remplazar la linea por el siguiente:    
+    module.exports = { //--> Ponerlo mode production
+        mode: 'production',
+        ...
+    }
+    //////////////////////////////////////////////////////////////////////
+    
+    //////////////////////////////////////////////////////////////////////
+    *20- Agregar la siguiente linea en el "./package.json"
+    
+    "scripts": { //-> La siguiente linea
+        "build:prod": "webpack --config webpack.prod.js",
+    },
     //////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////////////////////
