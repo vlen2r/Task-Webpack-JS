@@ -105,9 +105,27 @@
     //////////////////////////////////////////////////////////////////////
 
     //////////////////////////////////////////////////////////////////////
-    *6- npm install --save-dev mini-css-extract-plugin //-> Ejecutar comando
+    *13- npm install --save-dev mini-css-extract-plugin //-> Ejecutar comando
       https://webpack.js.org/plugins/mini-css-extract-plugin/
     //////////////////////////////////////////////////////////////////////
+
+    *14- Agregar las siguientes lineas en "./webpack.dev.js"
+    
+    const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+    module: {
+        rules: [ //-> Añadir esta nueva regla
+            {
+                test: /styles.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+        ]
+    },
+    plugins: [ //-> Añadir este nuevo plugin
+        new MiniCssExtractPlugin({
+            filename: '[name].[fullhash].css',
+            ignoreOrder: false,
+        }),
+    ]
     
     //////////////////////////////////////////////////////////////////////
     *7- npm install copy-webpack-plugin --save-dev //-> Ejecutar comando
