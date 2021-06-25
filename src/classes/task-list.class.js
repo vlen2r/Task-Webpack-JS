@@ -17,14 +17,14 @@ export class TaskList {
         for (const element of this.list) {
             if (element.id == id) {
                 element.completed = !element.completed;
-                saveLocalStorage();
+                this.saveLocalStorage();
                 break;
             }
         }
     }
     deleteAllCompleted() {
         this.list = this.list.filter(task => !task.completed);
-        saveLocalStorage();
+        this.saveLocalStorage();
     }
 
     saveLocalStorage() {
@@ -33,5 +33,9 @@ export class TaskList {
     loadLocalStorage() {
         this.list = (localStorage.getItem('task')) ? JSON.parse(localStorage.getItem('task')) : [];
         this.list = this.list.map(obj => Task.fromJson(obj));
+    }
+
+    getCountTaskPending() {
+        return (this.list.filter(task => !task.completed)).length;
     }
 }

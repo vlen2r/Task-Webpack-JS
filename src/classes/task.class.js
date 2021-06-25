@@ -5,6 +5,7 @@ export class Task {
         tempTask.id = id;
         tempTask.completed = completed;
         tempTask.create_at = create_at;
+        return tempTask;
     }
 
     constructor(description) {
