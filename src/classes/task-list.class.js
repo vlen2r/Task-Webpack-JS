@@ -2,7 +2,7 @@ import { Task } from "./task.class";
 export class TaskList {
 
     constructor() {
-        loadLocalStorage();
+        this.loadLocalStorage();
     }
 
     addTask(task) {
